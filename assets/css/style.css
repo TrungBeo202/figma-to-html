@@ -1,0 +1,71 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.header .body {
+  align-items: center;
+  display: flex;
+  padding: 3.6rem 0 0.8rem;
+}
+.nav ul {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.main-content {
+  width: 117rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: calc(100% - 4.8rem);
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 0.8rem 2.1rem;
+}
+.nav li.active a,
+.nav a:hover {
+  color: #171100;
+  text-shadow: -0.1rem 0 0 currentColor;
+}
+.nav li.active a::after {
+  position: absolute;
+  left: 2.11rem;
+  bottom: 0.6rem;
+  content: "";
+  display: block;
+  width: 1.2rem;
+  height: 0.2rem;
+  background-color: #171100;
+}
+.btn {
+  min-width: 11.8rem;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 0rem 1.6rem;
+  line-height: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background: #171100;
+  border-radius: 2.45rem;
+}
+.header.btn-sign-up {
+  min-width: 14.4rem;
+}
+.header.fixed {
+  background-color: #fffcf4;
+  position: sticky;
+  top: -2.8rem;
+}
+.header.action {
+  margin-left: 4.9rem;
+}
