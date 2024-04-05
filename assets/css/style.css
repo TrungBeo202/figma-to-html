@@ -17,82 +17,107 @@ a {
   text-decoration: none;
 }
 .main-content {
-  width: 117rem;
-  max-width: calc(100% - 4.8rem);
+  width: 1170px;
+  max-width: calc(100% - 48px);
   margin-left: auto;
   margin-right: auto;
 }
-
+.btn {
+  display: inline-block;
+  text-align: center;
+  padding: 0 16px;
+  min-width: 114px;
+  line-height: 50px;
+  border-radius: 999px;
+  background: #171100;
+  color: #fff;
+}
+.btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-style);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27;
+  letter-spacing: -0.76px;
+}
 /* Header */
 .header {
-  background: #fffcf4;
+  background-color: #fffcf4;
 }
 .header .body {
-  padding: 2.4rem 0 0.8rem;
   display: flex;
   align-items: center;
+  padding: 36px 0 8px;
 }
-.nav {
+.header .nav {
   margin-left: auto;
+}
+.header.fixed {
+  position: sticky;
+  top: -28px;
+  z-index: 1;
 }
 .nav ul {
   display: flex;
 }
 .nav a {
   position: relative;
-  color: rgb(233, 187, 127);
+  padding: 0 21px;
+  color: #5f5b53;
   font-size: 1.6rem;
-  padding: 0.8rem 2.1rem;
 }
-.nav a:hover,
-.nav li.active a {
-  color: black;
-  text-shadow: 0.1rem 0 0 currentColor;
+.nav li.active a,
+.nav li a:hover {
+  color: #171100;
+  font-size: 1.6rem;
+  text-shadow: 1px 0 0 currentColor;
 }
-.nav li.active a::after {
+.nav li.active a:after {
   position: absolute;
-  bottom: 0.8rem;
-  left: 2.2rem;
+  left: 21px;
+  bottom: 0;
   content: "";
-  width: 1rem;
-  height: 0.1rem;
-  background-color: black;
+  width: 11px;
+  height: 1px;
+  background-color: #171100;
 }
-.btn {
-  display: inline-block;
-  min-width: 11.8rem;
-  background-color: black;
-  color: azure;
-  font-size: 1.6rem;
-  font-weight: 600;
-  padding: 0rem 1.6rem;
-  text-align: center;
-  line-height: 5rem;
-  border-radius: 99.9rem;
+.action .btn-sign-up {
+  width: 144px;
 }
-.btn:hover {
-  opacity: 0.8;
+.action {
+  margin-left: 49px;
 }
-.header .btn-sign-up {
-  min-width: 14.4rem;
+/* Popular Optimal */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-.header.fixed {
-  z-index: 1;
-  position: sticky;
-  top: -1.6rem;
+
+.line-clamp.line-2 {
+  --line-clamp: 2;
 }
-.header .action {
-  margin-left: 4.9rem;
+
+.break-all {
+  word-break: break-all;
 }
-/* hero */
+/* Hero */
 .hero {
   background-color: #fffcf4;
+  /* padding: 56px 0 65px; */
 }
 .hero .body {
   display: flex;
+  padding: 56px 0 65px;
 }
+
+/* media-left */
 .hero .media-block {
-  padding: 5.6rem 0 6.5rem;
   position: relative;
   width: 48%;
 }
@@ -100,32 +125,33 @@ a {
   width: 47rem;
   height: 68.5rem;
   border-radius: 2rem;
+  object-fit: cover;
 }
 .hero .hero-sumary {
+  padding: 24px;
+  width: 270px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
   position: absolute;
   right: 0;
-  bottom: 4.8rem;
-  width: 27rem;
-  border-radius: 1.2rem;
-  background: #fff;
-  box-shadow: 0rem 16rem 32rem 0rem rgba(0, 0, 0, 0.05);
-  padding: 2.4rem;
+  bottom: 48px;
 }
 .hero-sumary .item {
   display: flex;
   align-items: center;
 }
 .hero-sumary .item + .item {
-  margin-top: 2rem;
+  margin-top: 22px;
 }
 .hero-sumary .icon {
-  display: flex;
-  width: 4.8rem;
-  height: 4.8rem;
-  border-radius: 50%;
-  background-color: #fff9e8;
   align-items: center;
   justify-content: center;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: #fff9e8;
+  border-radius: 50%;
 }
 .hero-sumary .icon2 {
   background-color: #fcefff;
@@ -134,93 +160,212 @@ a {
   background-color: #ebeaff;
 }
 .hero-sumary .info {
-  margin-left: 1.6rem;
+  margin-left: 16px;
 }
-.hero-sumary .info .label {
+.hero-sumary .label {
   color: #5f5b53;
   font-size: 1.4rem;
   line-height: 1.86;
 }
-.hero-sumary .info .title {
+.hero-sumary .title {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
 }
+/* content-right */
 .hero .content-block {
-  padding: 5.6rem 10rem 6.5rem;
   width: 52%;
+  padding: 64px 0 0 130px;
 }
 .hero .heading {
-  min-width: 47rem;
   color: #171100;
   font-family: var(--font-style);
   font-size: 5.8rem;
   font-weight: 700;
   line-height: 1.18;
-  letter-spacing: -0.11rem;
-  margin-top: 4rem;
-  margin-bottom: 2.2rem;
+  letter-spacing: -1.16px;
 }
 .hero .desc {
+  margin-top: 22px;
   color: #5f5b53;
   font-size: 1.8rem;
   line-height: 1.67;
-  margin-bottom: 3.8rem;
 }
 .hero .cta-group {
+  margin-top: 38px;
   display: flex;
-  align-items: center;
 }
-.hero .btn-see-courses {
-  min-width: 18rem;
-  line-height: 6.4rem;
-  background: var(--primary-color);
+.cta-group .btn-cta {
+  width: 180px;
+  line-height: 64px;
+  border-radius: 32px;
+  background: #ffb900;
 }
-.hero .watch-video {
-  margin-left: 2.8rem;
-  display: flex;
-  border: none;
-  background-color: transparent;
+.cta-group .watch-video {
   cursor: pointer;
+  display: flex;
   align-items: center;
+  margin-left: 28px;
 }
-.hero .watch-video .icon {
+.cta-group .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 2rem;
-  width: 4rem;
-  height: 4rem;
-  background-color: rgb(242, 240, 248);
-  border-radius: 50%;
 }
-.hero .watch-video span {
-  margin-left: 1.4rem;
+.cta-group span {
+  margin-left: 14px;
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.67;
 }
-.hero .desc-recent {
-  margin-top: 4.8rem;
+.hero .desc-4 {
+  margin-top: 48px;
   color: #5f5b53;
   font-size: 1.8rem;
   line-height: 1.67;
 }
-.hero .starts strong {
+.hero .desc-5 {
+  margin-top: 8px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+.desc-5 strong {
+  margin-right: 15px;
   color: #171100;
   font-family: var(--font-style);
   font-size: 4.4rem;
   font-weight: 700;
   line-height: 1.23;
 }
-.hero .starts {
+.desc-5 strong:nth-child(2) {
+  margin-left: 28px;
+}
+/* Popular */
+.popular-top {
+  margin-top: 135px;
+  padding: 65px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular-top .info .desc {
+  width: 458px;
+  margin-top: 16px;
   color: #5f5b53;
   font-size: 1.8rem;
-  line-height: 3rem;
-  margin-bottom: 8rem;
+  line-height: 1.67;
 }
-.hero .starts strong:nth-child(2) {
-  margin-left: 2.8rem;
+.popular .controls {
+  display: flex;
+  gap: 18px;
+}
+.popular .control-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.popular .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+/* Course-list */
+.popular .course-item .foot,
+.popular .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popular .course-list {
+  display: flex;
+  margin-top: 55px;
+  gap: 30px;
+}
+.popular .course-item .thumb {
+  width: 100%;
+  height: 278px;
+  object-fit: cover;
+  border-radius: 12px 12px 0px 0px;
+}
+.popular .course-item .info {
+  padding: 16px 22px 22px;
+}
+.popular .course-item .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .course-item .rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.popular .course-item .star {
+  width: 18px;
+  height: 18px;
+}
+.popular .course-item .value {
+  color: #fea31b;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.popular .course-item .desc {
+  color: #5f5b53;
+  margin-top: 6px;
+  width: 326px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  font-style: normal;
+}
+.popular .course-item .foot {
+  margin-top: 12px;
+}
+.popular .course-item .price {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+.popular .course-item .btn-book {
+  width: 118px;
+  line-height: 50px;
+  border-radius: 45px;
+  background: #171100;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.popular .course-item .btn-book:hover {
+  width: 118px;
+  line-height: 50px;
+  border-radius: 45px;
+  background: #ffb900;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.popular .course-item {
+  border-radius: 12px;
+  border: 1px solid #e2dfda;
+  background: #fff;
+}
+.popular .course-item:hover {
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
