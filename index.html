@@ -15,10 +15,10 @@
   </head>
   <body style="height: 10000px">
     <!-- Header -->
-    <header class="header fixed">
+    <div class="header fixed">
       <div class="main-content">
         <div class="body">
-          <img src="./assets/img/Lesson..svg" alt="" />
+          <img src="./assets/img/Lesson..svg" alt="lesson" />
           <nav class="nav">
             <ul>
               <li class="active"><a href="#!">Home</a></li>
@@ -32,14 +32,13 @@
           </div>
         </div>
       </div>
-    </header>
-    <!-- Main -->
+    </div>
+    <!-- main -->
     <main>
-      <!-- Hero -->
+      <!-- hero -->
       <div class="hero">
         <div class="main-content">
           <div class="body">
-            <!-- left -->
             <div class="media-block">
               <img src="./assets/img/guy-lesson 1.jpg" alt="" class="img" />
               <div class="hero-sumary">
@@ -53,7 +52,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <div class="icon icon2">
+                  <div class="icon">
                     <img src="./assets/icon/dev.svg" alt="" />
                   </div>
                   <div class="info">
@@ -62,7 +61,7 @@
                   </div>
                 </div>
                 <div class="item">
-                  <div class="icon icon3">
+                  <div class="icon">
                     <img src="./assets/icon/marketing.svg" alt="" />
                   </div>
                   <div class="info">
@@ -72,7 +71,6 @@
                 </div>
               </div>
             </div>
-            <!-- right -->
             <div class="content-block">
               <h1 class="heading">
                 Learn without limits and spread knowledge.
@@ -84,22 +82,22 @@
               </p>
               <div class="cta-group">
                 <a href="#!" class="btn btn-cta">See Courses</a>
-                <div class="watch-video">
-                  <div class="logo">
+                <button class="watch-video">
+                  <div class="icon">
                     <img src="./assets/icon/play.svg" alt="" />
                   </div>
                   <span>Watch Video</span>
-                </div>
+                </button>
               </div>
-              <div class="desc-4">Recent engagement</div>
-              <p class="desc-5">
+              <p class="desc desc-recent">Recent engagement</p>
+              <p class="desc start">
                 <strong>50K</strong>Students<strong>70+</strong>Courses
               </p>
             </div>
           </div>
         </div>
       </div>
-      <!-- Popular -->
+      <!-- popular -->
       <div class="popular">
         <div class="main-content">
           <div class="popular-top">
@@ -149,22 +147,17 @@
             <!-- item1 -->
             <div class="course-item">
               <a href="#!"
-                ><img
-                  class="thumb"
-                  src="./assets/img/courses-1.jpg"
-                  alt="Basic web design"
+                ><img src="./assets/img/courses-1.jpg" alt="" class="thumb"
               /></a>
               <div class="info">
                 <div class="head">
-                  <a class="line-clamp break-all" href="#!"
-                    ><h3 class="title">Basic web design</h3></a
-                  >
+                  <h3 class="title"><a href="#!">Basic web design</a></h3>
                   <div class="rating">
                     <img src="./assets/icon/Star.svg" alt="" class="star" />
                     <span class="value">4.5</span>
                   </div>
                 </div>
-                <p class="desc line-clamp line-2 break-all">
+                <p class="desc">
                   Get the best course, gain knowledge and shine for your future
                   career.
                 </p>
@@ -177,22 +170,17 @@
             <!-- item2 -->
             <div class="course-item">
               <a href="#!"
-                ><img
-                  class="thumb"
-                  src="./assets/img/courses-2.jpg"
-                  alt="UI/UX design"
+                ><img src="./assets/img/courses-2.jpg" alt="" class="thumb"
               /></a>
               <div class="info">
                 <div class="head">
-                  <a class="line-clamp break-all" href="#!"
-                    ><h3 class="title">UI/UX design</h3></a
-                  >
+                  <h3 class="title"><a href="#!">UI/UX design</a></h3>
                   <div class="rating">
                     <img src="./assets/icon/Star.svg" alt="" class="star" />
                     <span class="value">4.5</span>
                   </div>
                 </div>
-                <p class="desc line-clamp line-2 break-all">
+                <p class="desc">
                   Get the best course, gain knowledge and shine for your future
                   career.
                 </p>
@@ -205,22 +193,17 @@
             <!-- item3 -->
             <div class="course-item">
               <a href="#!"
-                ><img
-                  class="thumb"
-                  src="./assets/img/courses-3.jpg"
-                  alt="Web App design"
+                ><img src="./assets/img/courses-3.jpg" alt="" class="thumb"
               /></a>
               <div class="info">
                 <div class="head">
-                  <a class="line-clamp break-all" href="#!"
-                    ><h3 class="title">Web App design</h3></a
-                  >
+                  <h3 class="title"><a href="#!">Web App design</a></h3>
                   <div class="rating">
                     <img src="./assets/icon/Star.svg" alt="" class="star" />
                     <span class="value">4.5</span>
                   </div>
                 </div>
-                <p class="desc line-clamp line-2 break-all">
+                <p class="desc">
                   Get the best course, gain knowledge and shine for your future
                   career.
                 </p>
@@ -233,7 +216,132 @@
           </div>
         </div>
       </div>
-      <!-- Feedback -->
+      <!-- feedback -->
+      <div class="feedback">
+        <div class="main-content">
+          <div class="feedback-list">
+            <div class="feedback-item">
+              <div class="info">
+                <img src="./assets/img/guy-1.jpg" alt="" class="avatar" />
+                <p class="member-name">Lisaa Moor</p>
+                <p class="desc">Student of Web Design</p>
+                <div class="dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="content">
+                <img
+                  src="./assets/icon/vector.svg"
+                  alt=""
+                  class="open-quotes"
+                />
+                <blockquote>
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="info">
+                <img src="./assets/img/guy-2.jpg" alt="" class="avatar" />
+                <p class="member-name">Daniel Park</p>
+                <p class="desc">Student of Web Design</p>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                </div>
+              </div>
+              <div class="content">
+                <img
+                  src="./assets/icon/vector.svg"
+                  alt=""
+                  class="open-quotes"
+                />
+                <blockquote>
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </blockquote>
+              </div>
+            </div>
+            <div class="feedback-item">
+              <div class="info">
+                <img src="./assets/img/guy-3.jpg" alt="" class="avatar" />
+                <p class="member-name">Mona Lynx</p>
+                <p class="desc">Student of Web Design</p>
+                <div class="dots">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot active"></span>
+                </div>
+              </div>
+              <div class="content">
+                <img
+                  src="./assets/icon/vector.svg"
+                  alt=""
+                  class="open-quotes"
+                />
+                <blockquote>
+                  Not only does my resume look impressive—filled with the names
+                  and logos of world-class institutions—but these certificates
+                  also bring me closer to my career goals by validating the
+                  skills I've learned."
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- features 1 -->
+      <div class="features">
+        <div class="main-content">
+          <div class="body">
+            <div class="images">
+              <img class="lower" src="./assets/img/guy-1.jpg" alt="" />
+              <img src="./assets/img/guy-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2 class="heading-lv2">
+                Learner outcomes through our awesome platform
+              </h2>
+              <p class="desc">
+                87% of people learning for professional development report
+                career benefits like getting a promotion, a raise, or starting a
+                new career.
+              </p>
+              <p class="desc">Lesson Impact Report (2022)</p>
+              <a href="" class="btn cta-btn">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- features 2 -->
+      <div class="features features-2nd">
+        <div class="main-content">
+          <div class="body">
+            <div class="images">
+              <img src="./assets/img/guy-1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h2 class="heading-lv2">
+                Take the next step toward your personal and professional goals
+                with Lesson.
+              </h2>
+              <p class="desc">
+                Take the next step toward. Join now to receive personalized and
+                more recommendations from the full Coursera catalog.
+              </p>
+              <a href="" class="btn cta-btn">Join Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
